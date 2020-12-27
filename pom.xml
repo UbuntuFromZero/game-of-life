@@ -183,18 +183,6 @@
                 <version>${easyb.version}</version>
                 <scope>test</scope>
             </dependency>
-			<dependency>
-			   <groupId>net.sourceforge.cobertura</groupId>
-			   <artifactId>cobertura</artifactId>
-			   <version>2.1.1</version>
-			   <scope>test</scope>
-			   <exclusions>
-					  <exclusion>
-							<groupId>ch.qos.logback</groupId>
-							<artifactId>logback-classic</artifactId>
-					  </exclusion>
-			   </exclusions>
-			</dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -380,17 +368,6 @@
                                     <artifactId>maven-jxr-plugin</artifactId>
                                     <version>2.4</version>
                                 </plugin>
-								<plugin>
-									<groupId>org.codehaus.mojo</groupId>
-									<artifactId>cobertura-maven-plugin</artifactId>
-									<version>${cobertura.version}</version>
-									<configuration>
-										<formats>
-											<format>html</format>
-											<format>xml</format>
-										</formats>
-									</configuration>
-								</plugin>
                             </reportPlugins>
                         </configuration>
                         <dependencies>
