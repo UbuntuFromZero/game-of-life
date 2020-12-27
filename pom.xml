@@ -184,6 +184,18 @@
                 <scope>test</scope>
             </dependency>
         </dependencies>
+		<dependency>
+		   <groupId>net.sourceforge.cobertura</groupId>
+		   <artifactId>cobertura</artifactId>
+		   <version>cobertura.version</version>
+		   <scope>test</scope>
+		   <exclusions>
+				  <exclusion>
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+				  </exclusion>
+		   </exclusions>
+	</dependency>
     </dependencyManagement>
     <dependencies>
         <dependency>
